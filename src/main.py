@@ -1,6 +1,6 @@
-"""Main entry point for the application."""
-
-import secrets
+"""
+Main entry point for the application.
+"""
 
 from fastapi import FastAPI
 
@@ -17,6 +17,3 @@ async def index():
 async def test_param(param: str):
     """This tests that params are passed correctly"""
     return {"param": param}
-
-
-print(secrets.token_urlsafe(32))
