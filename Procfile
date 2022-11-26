@@ -1,1 +1,1 @@
-web: gunicorn src.main:app --workers 4 --worker-class uvicorn.workers.UvicornWorker
+web: uvicorn src.main:app --host=0.0.0.0 --port=${PORT}
