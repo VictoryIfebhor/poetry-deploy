@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "checking-poetry"
+version = "0.1.0"
+description = ""
+authors = ["Victory Ifebhor <victory.ifebhor@gmail.com>"]
+readme = "README.md"
+packages = [{include = "checking_poetry", from = "src"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+fastapi = "^0.87.0"
+uvicorn = {extras = ["standard"], version = "^0.20.0"}
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
